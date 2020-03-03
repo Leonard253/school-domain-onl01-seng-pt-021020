@@ -1,4 +1,13 @@
-class School
+ade(grade)
+    @roster[grade]
+  end
+
+  def sort
+    @roster.each do |key, value|
+      value.sort!
+    end
+  end
+end class School
   def initialize(name)
     @name = name
     @roster = {}
@@ -16,13 +25,4 @@ class School
     end
   end
 
-  def grade(grade)
-    @roster[grade]
-  end
-
-  def sort
-    @roster.each do |key, value|
-      value.sort!
-    end
-  end
-end 
+  def gr
